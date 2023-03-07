@@ -1,0 +1,111 @@
+.word{
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    align-items: center;
+    color: var(--main-color-text);
+    & .title{
+        font-size: 50px;
+        margin-bottom: .5rem;
+    }
+
+    & .phonetic{
+        color: var(--primary-color-purple);
+        font-size: 24px;
+    }
+
+    &-partOfSpeech{
+        font-size: 1.3rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        color: var(--main-color-text);
+        &::after{
+            content: '';
+            margin-left: 1rem;
+            height: 1px;
+            background-color: silver;
+            flex-grow: 1;
+        }
+    }
+
+    &-source{        
+        color: var(--main-color-text);
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 15px;
+        padding-bottom: 1rem;
+        &::after{
+            display: block;
+            content: '';
+            height: 1px;
+            background-color: silver;
+            flex-grow: 1;
+        }
+    }
+}
+
+.word-meaning{
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    & .title,
+      .title-synonym{
+        font-size: 1.2rem;
+        color: var(--primary-color-grey);
+        font-weight: 500;
+    }
+
+    & .title-synonym{
+        display: inline-block;
+    }
+}
+
+.word-synonyms{
+    &-results {
+        padding: 10px;
+        color: var(--primary-color-purple);
+        font-weight: 600;
+    }
+}
+
+
+.word-synonym-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon-play{
+    cursor: pointer;
+
+    &:hover path{
+        fill: var(--primary-color-purple);
+    }
+}
+
+.definition-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 1rem;
+}
+
+.definition-list li{
+    padding-left: .5rem;
+    color: var(--main-color-text);
+    // padding-bottom: .8rem;
+}
+
+.definition-list li::marker {
+        content: "\2022";
+        color: var(--primary-color-purple); 
+        font-weight: bold; 
+        display: inline-block; 
+        width: 1em; 
+        margin-right: 1em; 
+}
+
+.definition-list span{
+    padding-left: 10px;
+    color: var(--primary-color-grey);
+}

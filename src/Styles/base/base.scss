@@ -1,0 +1,20 @@
+@import "./typography.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Inter&family=Lora&display=swap');
+
+body{
+    background-color: var(--main-color-bg);
+    color: var(--color-main-text);
+    transition: background-color .5s ease;
+}
+
+body.font-sans-serif{
+    font-family: 'Inter', sans-serif;
+
+}
+body.font-serif{
+    font-family: 'Lora', serif;
+}
+body.font-mono{
+    font-family: 'Inconsolata', monospace;
+}
