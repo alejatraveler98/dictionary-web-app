@@ -62,7 +62,7 @@ const Header = () => {
               {nameMode}
               <IconArrowDown/>
             </div>
-            <ul className={`main-header-fonts ${modalFontMode ? 'open' : ''}`} id="selectFonts">
+            <ul className={`main-header-fonts ${modalFontMode && 'open'}`} id="selectFonts">
               <li onClick={changeFont}>Sans Serif</li>
               <li onClick={changeFont}>Serif</li>
               <li onClick={changeFont}>Mono</li>

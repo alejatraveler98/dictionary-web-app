@@ -1,9 +1,9 @@
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { WordContext } from "../context/wordsContext";
 import IconSearch from "./Icons/IconSearch";
 
 const Search = () => {
-    const [search, setSearch] = useState('');
+    const [search, setSearch] = useState('keyboard');
     const { searchWords } = useContext(WordContext)
     const [ error, setError] = useState(null)
     const handleChange = async (e) => {
@@ -20,6 +20,11 @@ const Search = () => {
         }
         setError(`Whoops, can't be empty...`)
     }
+
+    useEffect(()=>{
+        searchWords({search})
+    },[])
+
     return (
         <div className="main-search">
             <form className="form-search" onSubmit={e => handleSubmit(e)}>

@@ -1,11 +1,9 @@
 import WordMeaning from "./WordMeaning"
-import { IconPlay } from "./Icons/IconPlay"
-import { useState } from "react"
 import WordAudio from "./WordAudio"
 
 
 const Word = (dataWord) => {
-  console.log('dataWord',dataWord);
+  
   let { word, phonetic, phonetics, sourceUrls, meanings } = dataWord.data
   let firstPhonetic = phonetics.find(phonetic => phonetic?.audio.length > 0)
     

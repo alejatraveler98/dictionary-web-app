@@ -7,7 +7,6 @@ const WordAudio = ({phonetic}) => {
         let [audio] = useState(new Audio(url))
         const [playing, setPlaying] = useState(false);
         const toggle = () => audio.play();
-        // const toggle = () => setPlaying(!playing);
         useEffect(() => {
             playing ? audio.play() : audio.pause();
           },
