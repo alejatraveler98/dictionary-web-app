@@ -1,6 +1,6 @@
 # Frontend Mentor - Dictionary Web App Solution
 
-Sitio Web: https://dictionary-web-app-omega.vercel.app/
+WebSite 🌐: https://dictionary-web-app-omega.vercel.app/ 
 
 This is my solution to the [Dictionary web app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/dictionary-web-app-h5wwnyuKFL)
 
